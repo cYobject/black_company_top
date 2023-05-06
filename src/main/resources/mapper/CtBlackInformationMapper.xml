@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyobject.black_company_top.mapper.CtBlackInformationMapper">
+
+    <resultMap id="BaseResultMap" type="com.cyobject.black_company_top.domain.po.CtBlackInformation">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="employeesNum" column="employees_num" jdbcType="INTEGER"/>
+            <result property="departmentNum" column="department_num" jdbcType="INTEGER"/>
+            <result property="industry" column="industry" jdbcType="VARCHAR"/>
+            <result property="businessDirection" column="business_direction" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="district" column="district" jdbcType="VARCHAR"/>
+            <result property="workAddress" column="work_address" jdbcType="VARCHAR"/>
+            <result property="breakMode" column="break_mode" jdbcType="VARCHAR"/>
+            <result property="workAmStartTime" column="work_am_start_time" jdbcType="TIMESTAMP"/>
+            <result property="workAmEndTime" column="work_am_end_time" jdbcType="TIMESTAMP"/>
+            <result property="workPmStartTime" column="work_pm_start_time" jdbcType="TIMESTAMP"/>
+            <result property="workPmEndTime" column="work_pm_end_time" jdbcType="TIMESTAMP"/>
+            <result property="breakTimeDay" column="break_time_day" jdbcType="CHAR"/>
+            <result property="socialSecurityTime" column="social_security_time" jdbcType="TINYINT"/>
+            <result property="socialSecurityBaseFund" column="social_security_base_fund" jdbcType="VARCHAR"/>
+            <result property="socialSecurityProportion" column="social_security_proportion" jdbcType="VARCHAR"/>
+            <result property="publicAccumulationTime" column="public_accumulation_time" jdbcType="TINYINT"/>
+            <result property="publicAccumulationFund" column="public_accumulation_fund" jdbcType="VARCHAR"/>
+            <result property="publicAccumulationFundProportion" column="public_accumulation_fund_proportion" jdbcType="VARCHAR"/>
+            <result property="performanceAppraisalFlag" column="performance_appraisal_flag" jdbcType="TINYINT"/>
+            <result property="teaPartyFlag" column="tea_party_flag" jdbcType="TINYINT"/>
+            <result property="festivalGiftFlag" column="festival_gift_flag" jdbcType="TINYINT"/>
+            <result property="quarterlyAwardFlag" column="quarterly_award_flag" jdbcType="TINYINT"/>
+            <result property="projectFlag" column="project_flag" jdbcType="TINYINT"/>
+            <result property="annualBonusFlag" column="annual_bonus_flag" jdbcType="TINYINT"/>
+            <result property="equityIncentiveFlag" column="equity_incentive_flag" jdbcType="TINYINT"/>
+            <result property="dividendsFlag" column="dividends_flag" jdbcType="TINYINT"/>
+            <result property="comment" column="comment" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_by,create_time,
+        update_by,update_time,name,
+        type,employees_num,department_num,
+        industry,business_direction,province,
+        city,district,work_address,
+        break_mode,work_am_start_time,work_am_end_time,
+        work_pm_start_time,work_pm_end_time,break_time_day,
+        social_security_time,social_security_base_fund,social_security_proportion,
+        public_accumulation_time,public_accumulation_fund,public_accumulation_fund_proportion,
+        performance_appraisal_flag,tea_party_flag,festival_gift_flag,
+        quarterly_award_flag,project_flag,annual_bonus_flag,
+        equity_incentive_flag,dividends_flag,comment
+    </sql>
+</mapper>
